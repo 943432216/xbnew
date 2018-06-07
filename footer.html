@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>心宝药业</title>
+	<link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/nitialize.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+</head>
+
+<body>
+    <div class="xb_box overflow">
+        <footer class="left width overflow position">
+            <div class="left overflow footer_top">
+                <div class="left overflow footer_left">
+                    <span class="left overflow">
+                        <h3 class="hfs">关于心宝</h3>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;公司简介</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;发展历程</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;企业文化</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;企业荣誉</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;董事长致词</a>
+                            </li>
+                        </ul>
+                    </span>
+                    <span class="left overflow">
+                        <h3 class="hfs">产品中心</h3>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;心宝丸</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;龟鹿补肾片</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;蒲地蓝消炎片</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;蒲蓝地消炎胶囊</a>
+                            </li>
+                        </ul>
+                    </span>
+                    <span class="left overflow">
+                        <h3 class="hfs">心肾同治</h3>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;龟鹿补肾片健康手册</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;心宝丸的临床应用</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;心肾相交理论</a>
+                            </li>
+                        </ul>
+                    </span>
+                    <span class="left overflow">
+                        <h3 class="hfs">最新动态</h3>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;公司动态</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;行业动态</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">&nbsp;-&nbsp;视频中心</a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="left overflow footer_right">
+                    <span class="left overflow">
+                        <h3 class="hfs">联系我们</h3>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">企业名称：广东心宝药业科技有限公司</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">生产地址：广州高新技术产业开发区伴河路6号</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">电话号码：020-37924226 020-87817116</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">传真号码：020-87817116</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">邮编号码：510535</a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+
+            </div>
+            <div class="left overflow footer_bn width">
+                <span class="bn_top">《互联网药品信息服务资格证》编号（粤）-非经营性-2011-0122&nbsp;Copyright © 广东心宝制药有限公司&emsp;&emsp;粤ICP备：10 025609号&nbsp;| </span>
+                <span class="bn_s">
+                    <ul class="overflow display">
+                        <li>
+                            <p>友情链接：</p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">龟鹿补肾片-康爱多网上药店</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">广东省食品药品监督管理总局</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">国家食品药品监督管理总局 </a>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+            <div class="footer_logo">
+                <img src="img/pc_logob.png" class="img" />
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function () {
+        var wid = document.documentElement.clientWidth || document.body.clientWidth;
+        var stawid = $(window).width();
+        if (stawid > 1340 && stawid < 1366) {
+            $('.xb_box').css('width',wid);
+        } else if (stawid < 1340) {
+            $('.xb_box').css('width', '1366');
+        } else if (stawid < 1600 && stawid > 1570) {
+            $('.xb_box').css('width',wid);
+        } else if (stawid < 1920 && stawid > 1900) {
+            $('.xb_box').css('width',wid);
+        }
+        $(window).resize(function () {
+            var stawid = $(window).width();
+            if (stawid > 1340 && stawid < 1366) {
+                $('.xb_box').css('width',wid);
+            } else if (stawid < 1340) {
+                $('.xb_box').css('width', '1366');
+            } else if (stawid < 1600 && stawid > 1570) {
+                $('.xb_box').css('width',wid);
+            } else if (stawid < 1920 && stawid > 1900) {
+                $('.xb_box').css('width',wid);
+            }
+        })
+		
+    })
+</script>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>心宝药业</title>
+	<link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/nitialize.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+</head>
+
+<body>
+    <div class="xb_box overflow">
+        <header class="left width overflow">
+            <div class="left width overflow header_top">
+                <div class="left overflow header_logo"></div>
+                <div class="left overflow header_wz">
+                    <ul>
+                        <li>联系方式：（TEL）020-37924226 / 020-87817116</li>
+                        <li>
+                            <img src="img/ewms.png" />
+                        </li>
+                        <li>
+                            <a href="javascript:;">收藏本公司</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">设为主页</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left header_nav">
+                <div class="left width header_navc">
+                    <ul>
+                        <li>
+                            <div class="hfs">
+                                <a href="javascript:;">首页</a>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="start hfs">
+                                <a href="javascript:;">关于心宝</a>
+                            </div>
+                            <div class="nav2">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">公司简介</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">发展历程</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">企业文化</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">企业荣誉</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">董事长致词</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="start hfs">
+                                <a href="javascript:;">产品中心</a>
+                            </div>
+                            <div class="nav2">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">心宝丸</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">龟鹿补肾片</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">蒲地蓝消炎片</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">蒲蓝地消炎胶囊</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="start hfs">
+                                <a href="javascript:;">心肾同治</a>
+                            </div>
+                            <div class="nav2">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">心肾相交理论</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">心宝丸的临床应用</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">龟鹿补肾片健康手册</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="start hfs">
+                                <a href="javascript:;">最新动态</a>
+                            </div>
+                            <div class="nav2">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">公司动态</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">行业动态</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">视频中心</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hfs">
+                                <a href="javascript:;">联系心宝</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_banner left overflow width">
+                <div class="swiper-container width">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="img/eb57f896af.png" class="img" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="img/a44b9dfe12.png" class="img" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="img/293198e35e.png" class="img" />
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function () {
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            loop: true
+        });
+        //nav
+        $('.start').each(function () {
+            $(this).parent('li').on({
+                mouseover: function () {
+                    $('.nav2').css('display', 'none');
+                    $(this).children('.nav2').css('display', 'block');
+                },
+                mouseout: function () {
+                    $(this).children('.nav2').css('display', 'none');
+                }
+            });
+        });
+
+        var wid = document.documentElement.clientWidth || document.body.clientWidth;
+        var stawid = $(window).width();
+        if (stawid > 1340 && stawid < 1366) {
+            $('.xb_box').css('width',wid);
+        } else if (stawid < 1340) {
+            $('.xb_box').css('width', '1366');
+        } else if (stawid < 1600 && stawid > 1570) {
+            $('.xb_box').css('width',wid);
+        } else if (stawid < 1920 && stawid > 1900) {
+            $('.xb_box').css('width',wid);
+        }
+        $(window).resize(function () {
+            var stawid = $(window).width();
+            if (stawid > 1340 && stawid < 1366) {
+                $('.xb_box').css('width',wid);
+            } else if (stawid < 1340) {
+                $('.xb_box').css('width', '1366');
+            } else if (stawid < 1600 && stawid > 1570) {
+                $('.xb_box').css('width',wid);
+            } else if (stawid < 1920 && stawid > 1900) {
+                $('.xb_box').css('width',wid);
+            }
+        })
+		
+    })
+</script>
+
+</html>
